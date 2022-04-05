@@ -4,9 +4,35 @@
 
 \usepackage{minted}
 \usepackage{tikz}
-\usetikzlibrary{arrows}
+\usetikzlibrary{arrows,positioning,calc,decorations.pathreplacing,fit}
+\usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{unicode-math}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{chronosys}
+
+\setminted{
+	tabsize=4,
+	frame=lines
+}
+\hypersetup{
+	colorlinks,
+	linkcolor=blue,
+	urlcolor=blue,
+	anchorcolor=blue,
+	citecolor=blue,
+	breaklinks=true,
+	hyperfootnotes=true,
+	unicode
+}
+
+\usepackage{FiraMono}
 
 \setCJKmainfont{Noto Serif CJK SC}
 \setCJKsansfont{Noto Sans CJK SC}
@@ -15,25 +41,32 @@
 \title{Template}
 \author{Coelacanthus}
 \date{2022-03-16}
+\logo{
+	\includegraphics[scale=0.8]{asserts/template.pdf}
+}
+
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{enumerate items}[default]
+\beamertemplatenavigationsymbolsempty
 
 \begin{document}
 
 \begin{frame}
-  \titlepage
+	\titlepage
 \end{frame}
 
 \section{QWQ}
 \begin{frame}
-\frametitle{QWQ}
+	\frametitle{QWQ}
 
 \end{frame}
 
 
 \section{QAQ}
 \begin{frame}[fragile]
-\frametitle{QAQ}
+	\frametitle{QAQ}
 
-\begin{minted}{c++}
+	\begin{minted}{c++}
 while(!*ptrA) ;
 while(!*ptrB) ;
 *cnt += 1;
